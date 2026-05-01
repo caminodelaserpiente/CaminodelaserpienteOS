@@ -25,7 +25,7 @@
     time ./01-CaminodelaserpienteOS.sh
 
     ssh -v user@localhost -p 2222
-    scp -P 2222 -r /home/$USER/CaminodelaserpienteOS/ user@localhost:~/#[1.]
+    scp -P 2222 -r /home/$USER/CaminodelaserpienteOS/ user@localhost:~/ #[1.]
 
 ---
 

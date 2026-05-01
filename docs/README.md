@@ -30,4 +30,4 @@
 ---
 
 <a y="[1.]"></a>
-1. [https://www.debian.org/distrib/ | https://www.debian.org/doc/manuals/debian-reference/ch03.en.html#_systemd_init | debian-live-13.4.0-amd64-kde.iso](https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-13.4.0-amd64-kde.iso)
+1. [https://www.debian.org/distrib/ | https://www.debian.org/doc/manuals/debian-reference/ch03.en.html#_systemd_init | debian-live-13.4.0-amd64-xfce.iso](https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-13.4.0-amd64-xfce.iso)

@@ -18,7 +18,7 @@ log() {
 }
 
 main() {
-    USER_NAME="Viper"
+    USER_NAME="snaker"
     RANDOM_DIGIT1=$((RANDOM % 10))
     RANDOM_DIGIT2=$((RANDOM % 10))
     SUFFIX1="${RANDOM_DIGIT1}"

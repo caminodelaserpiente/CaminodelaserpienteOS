@@ -26,7 +26,7 @@ main() {
 
     SECONDS=0
     HOSTNAME="Jarvis"
-    USER_NAME="Viper"
+    USER_NAME="snaker"
     USER_PASS="222"
     ROOT_PASS="222"
 

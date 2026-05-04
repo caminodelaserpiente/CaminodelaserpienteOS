@@ -55,7 +55,7 @@ EOF
     apt install linux-image-amd64 linux-headers-amd64 grub-efi-amd64 xfsprogs btrfs-progs \
     cryptsetup cryptsetup-initramfs lvm2 systemd-sysv init network-manager wpasupplicant firmware-iwlwifi \
     intel-microcode firmware-linux firmware-linux-free firmware-linux-nonfree firmware-misc-nonfree \
-    sudo openssh-server nano zstd fonts-noto-cjk fonts-noto-core -y --no-install-recommends --no-install-suggests
+    sudo openssh-server nano zstd -y --no-install-recommends --no-install-suggests
     # apt install iwd dbus para no usar network-manager con wpasupplicant si asi se desea.
 
     log "[CHroot] Configurando Locales y Teclado definitivos ..."

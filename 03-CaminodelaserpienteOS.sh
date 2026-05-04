@@ -76,6 +76,8 @@ apt install -y --no-install-recommends --no-install-suggests \
  # fonts-noto-color-emoji \
  # fonts-noto-extra \
  # fonts-freefont-ttf \
+ # fonts-noto-cjk \
+ # fonts-noto-core \
  # showtime \
 
 log "Crear punto de restauración n.2 ..."

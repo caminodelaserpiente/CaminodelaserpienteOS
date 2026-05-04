@@ -39,26 +39,18 @@ sync
 umount /mnt
 
 log "Instalando herramientas ..."
-apt install passt \
- htop \
- git \
- bluez ovmf qemu-system-x86 qemu-utils qemu-system-gui -y --no-install-recommends --no-install-suggests
-#  aardvark-dns \
-#  podman \
-#  podman-compose \
-#  uidmap 
-# usermod --add-subuids 100000-165535 --add-subgids 100000-165535 $USER_NAME
-sudo usermod -aG kvm $USER_NAME
-
-mkdir -p /home/$USER_NAME/.qemu
-mkdir -p /home/$USER_NAME/.qemu/imgs
-mkdir -p /home/$USER_NAME/.qemu/virtuales
-cp /usr/share/OVMF/OVMF_VARS_4M.fd /home/$USER_NAME/.qemu/virtuales/virtual.fd
-cd /home/$USER_NAME/.qemu/virtuales/
-qemu-img create -f qcow2 base.qcow2 90G
-qemu-img create -f qcow2 virtual.qcow2 80G
-sudo chown -R $USER_NAME:$USER_NAME /home/$USER_NAME/.qemu
-cd ~/
+apt install htop git -y --no-install-recommends --no-install-suggests
+# apt install bluez ovmf qemu-system-x86 qemu-utils qemu-system-gui -y --no-install-recommends --no-install-suggests
+# sudo usermod -aG kvm $USER_NAME
+# mkdir -p /home/$USER_NAME/.qemu
+# mkdir -p /home/$USER_NAME/.qemu/imgs
+# mkdir -p /home/$USER_NAME/.qemu/virtuales
+# cp /usr/share/OVMF/OVMF_VARS_4M.fd /home/$USER_NAME/.qemu/virtuales/virtual.fd
+# cd /home/$USER_NAME/.qemu/virtuales/
+# qemu-img create -f qcow2 base.qcow2 90G
+# qemu-img create -f qcow2 virtual.qcow2 80G
+# sudo chown -R $USER_NAME:$USER_NAME /home/$USER_NAME/.qemu
+# cd ~/
 
 log "Crear punto de restauración n.2 ..."
 mount "$ROOT_DEV" /mnt
@@ -79,12 +71,12 @@ apt install -y --no-install-recommends --no-install-suggests \
  ffmpegthumbnailer \
  libgdk-pixbuf2.0-bin \
  gdm3 \
- fonts-noto-color-emoji \
- fonts-noto-extra \
- fonts-freefont-ttf \
-#  loupe \
-#  showtime \
-#  nautilus \
+ loupe \
+ vlc 
+ # fonts-noto-color-emoji \
+ # fonts-noto-extra \
+ # fonts-freefont-ttf \
+ # showtime \
 
 log "Crear punto de restauración n.2 ..."
 mount "$ROOT_DEV" /mnt

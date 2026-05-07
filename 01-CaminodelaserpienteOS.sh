@@ -90,7 +90,7 @@ EOF
     umount /mnt
 
     log "Montando estructura de directorios ..."
-    mount -t btrfs -o subvol=@,uuid="$UUID_BTRFS" /mnt || mount -o subvol=@ /dev/mapper/"$VG_NAME"-"$LV_ROOT_NAME" /mnt
+    mount -t btrfs -o subvol=@ /dev/mapper/"$VG_NAME"-"$LV_ROOT_NAME" /mnt
     mkdir -p /mnt/boot /mnt/home
     mount "$P2" /mnt/boot
     mount /dev/mapper/"$VG_NAME"-"$LV_HOME_NAME" /mnt/home

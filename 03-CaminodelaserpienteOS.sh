@@ -78,7 +78,9 @@ apt install -y --no-install-recommends --no-install-suggests \
  # fonts-freefont-ttf \
  # fonts-noto-cjk \
  # fonts-noto-core \
- # showtime \
+ # libreoffice-writer \
+ # libreoffice-impress \
+ # libreoffice-calc
 
 log "Crear punto de restauración n.2 ..."
 mount "$ROOT_DEV" /mnt
@@ -93,18 +95,19 @@ apt install wget curl -y --no-install-recommends --no-install-suggests
 apt install --reinstall ca-certificates -y
 mkdir -p /home/$USER_NAME/software
 cd /home/$USER_NAME/software
-wget -O vscode_latest.deb 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64'
+# wget -O vscode_latest.deb 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64'
+# wget -c https://dbeaver.io/files/dbeaver-ce-latest-linux-x86_64.deb -O dbeaver-ce-latest-linux-x86_64.deb
 wget https://repo.librewolf.net/pool/librewolf-149.0.2-2-linux-x86_64-deb.deb
-#URL=$(curl -sI https://github.com/beekeeper-studio/beekeeper-studio/releases/latest | grep -i location | cut -d ' ' -f 2 | tr -d '\r')
-#VERSION=$(basename $URL)
-#DEB_URL="https://github.com/beekeeper-studio/beekeeper-studio/releases/download/${VERSION}/beekeeper-studio_${VERSION#v}_amd64.deb"
-#wget "$DEB_URL" -O beekeeper-studio.deb
-#wget -P ~/.qemu/imgs https://lidsol.fi-b.unam.mx/debian-cd/13.4.0-live/amd64/iso-hybrid/debian-live-13.4.0-amd64-xfce.iso
-#git clone https://github.com/ggml-org/llama.cpp.git
-#wget https://github.com/ankitects/anki/releases/download/25.09/anki-launcher-25.09-linux.tar.zst
-#wget https://mirrors.rit.edu/CTAN/systems/texlive/Images/texlive2026.iso.sha512
-#wget https://mirrors.rit.edu/CTAN/systems/texlive/Images/texlive2026.iso.md5
-#wget -c https://mirrors.rit.edu/CTAN/systems/texlive/Images/texlive2026.iso
+# URL=$(curl -sI https://github.com/beekeeper-studio/beekeeper-studio/releases/latest | grep -i location | cut -d ' ' -f 2 | tr -d '\r')
+# VERSION=$(basename $URL)
+# DEB_URL="https://github.com/beekeeper-studio/beekeeper-studio/releases/download/${VERSION}/beekeeper-studio_${VERSION#v}_amd64.deb"
+# wget "$DEB_URL" -O beekeeper-studio.deb
+# wget -P ~/.qemu/imgs https://lidsol.fi-b.unam.mx/debian-cd/13.4.0-live/amd64/iso-hybrid/debian-live-13.4.0-amd64-xfce.iso
+# git clone https://github.com/ggml-org/llama.cpp.git
+# wget https://github.com/ankitects/anki/releases/download/25.09/anki-launcher-25.09-linux.tar.zst
+# wget https://mirrors.rit.edu/CTAN/systems/texlive/Images/texlive2026.iso.sha512
+# wget https://mirrors.rit.edu/CTAN/systems/texlive/Images/texlive2026.iso.md5
+# wget -c https://mirrors.rit.edu/CTAN/systems/texlive/Images/texlive2026.iso
 sudo chown -R $USER_NAME:$USER_NAME /home/$USER_NAME/software
 
 log "Regresando a un punto de restauración ..."

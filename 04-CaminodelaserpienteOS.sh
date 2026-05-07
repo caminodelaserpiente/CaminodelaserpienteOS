@@ -30,11 +30,6 @@ fi
 log "Dispositivo detectado correctamente: $ROOT_DEV"
 
 log "Instalando software ..."
-#apt install -y --no-install-recommends --no-install-suggests \
-# libreoffice-writer \
-# libreoffice-impress \
-# libreoffice-calc
-apt install -y --no-install-recommends --no-install-suggests /home/$USER_NAME/software/vscode_latest.deb
 apt install -y --no-install-recommends --no-install-suggests /home/$USER_NAME/software/librewolf-*.deb
 
 log "Crear punto de restauración n.3 ..."

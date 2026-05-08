@@ -146,7 +146,7 @@ EOF
     sed -i 's/GRUB_DISTRIBUTOR=.*/GRUB_DISTRIBUTOR="CaminodelaserpienteOS"/' /etc/default/grub
     sed -i 's/^GRUB_CMDLINE_LINUX_DEFAULT=.*/GRUB_CMDLINE_LINUX_DEFAULT=""/' /etc/default/grub
     echo "GRUB_TERMINAL=console" >> /etc/default/grub
-    echo "GRUB_PRELOAD_MODULES=\"btrfs\"" >> /etc/default/grub
+    echo "GRUB_PRELOAD_MODULES=\"luks cryptodisk lvm btrfs\"" >> /etc/default/grub
     echo "GRUB_ENABLE_CRYPTODISK=y" >> /etc/default/grub
     grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=CaminodelaserpienteOS --recheck
     grub-mkconfig -o /boot/grub/grub.cfg

@@ -137,6 +137,13 @@ EOF
     ======================================================================
 EOF
 
+    log "[CHroot] Bloqueo para protocolo AF_ALG ..."
+    cat <<EOF > /etc/modprobe.d/blacklist-uncommon.conf
+install af_alg /bin/true
+
+blacklist af_alg
+EOF
+
     log "[CHroot] Configurando Initramfs ..."
     echo "btrfs" >> /etc/initramfs-tools/modules
     echo "zstd" >> /etc/initramfs-tools/modules

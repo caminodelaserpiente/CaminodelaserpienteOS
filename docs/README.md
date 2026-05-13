@@ -7,6 +7,8 @@
 
 > Idealismus operis
 
+> Πᾶσα τέχνη καὶ πᾶσα μέθοδος, ὁμοίως δὲ πρᾶξίς τε καὶ προαίρεσις, ἀγαθοῦ τινος ἐφίεσθαι δοκεῖ· διὸ καλῶς ἀπεφήναντο τἀγαθόν, οὗ πάντ᾽ ἐφίεται.
+
 > Manuductio Celere pro *Debian GNU/Linux* installans: Scriptum ex fontibus *LIDSOL/UNAM* | ad *CaminodelaserpienteOS*
 > . Ablatione errorum ex facto oritur ius. Hoc systema libertatem machinae et mentis petit.
 

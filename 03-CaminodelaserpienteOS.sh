@@ -68,16 +68,19 @@ apt install -y --no-install-recommends --no-install-suggests \
  gnome-shell \
  gnome-control-center \
  gnome-console \
+  gnome-builder \
  ffmpegthumbnailer \
  libgdk-pixbuf2.0-bin \
  gdm3 \
  loupe \
  vlc 
- # fonts-noto-color-emoji \
- # fonts-noto-extra \
- # fonts-freefont-ttf \
- # fonts-noto-cjk \
- # fonts-noto-core \
+ fonts-noto \
+ fonts-liberation2 \
+ fonts-noto-color-emoji \
+ fonts-noto-extra \
+ fonts-freefont-ttf \
+ fonts-noto-cjk \
+ fonts-noto-core \
  # libreoffice-writer \
  # libreoffice-impress \
  # libreoffice-calc

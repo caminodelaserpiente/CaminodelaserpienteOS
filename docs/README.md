@@ -7,6 +7,8 @@
 
 > Idealismus operis
 
+> כְּשֶׁהֵחֵל אֱלֹהִים לִבְרֹא כָּל הַדְּבָרִים הָיוּ בִּבְחִינַת כּוֹחַ, אַךְ לֹא בִּבְחִינַת פֹּעַל 
+
 > "Πᾶσα τέχνη καὶ πᾶσα μέθοδος, ὁμοίως δὲ πρᾶξίς τε καὶ προαίρεσις, ἀγαθοῦ τινος ἐφίεσθαι δοκεῖ· διὸ καλῶς ἀπεφήναντο τἀγαθόν, οὗ πάντ᾽ ἐφίεται." —ΑΡΙΣΤΟΤΕΛΗΣ. <!-- #@aristoteles1831bekker -->
 
 > Manuductio Celere pro *Debian GNU/Linux* installans: Scriptum ex fontibus *LIDSOL/UNAM* | ad *CaminodelaserpienteOS*

@@ -14,7 +14,7 @@
 > Manuductio Celere pro *Debian GNU/Linux* installans: Scriptum ex fontibus *LIDSOL/UNAM* | ad *CaminodelaserpienteOS*
 > . Ablatione errorum ex facto oritur ius. Hoc systema libertatem machinae et mentis petit.
 
-* ### "Omnis plantatio quam non plantabit Pater meus celestis eradicabitur. Mat. Cap. XV." — Morelos <!-- #@SENTIMIENTOSDELANACIÓN -->
+> "Omnis plantatio quam non plantabit Pater meus celestis eradicabitur. Mat. Cap. XV." — Morelos <!-- #@SENTIMIENTOSDELANACIÓN -->
 
 * ### License: This project is licensed under the GNU General Public License v3.0. See the [`LICENSE`](LICENSE) file for more information.
 

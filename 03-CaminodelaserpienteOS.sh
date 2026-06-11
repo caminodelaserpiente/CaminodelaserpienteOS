@@ -20,7 +20,7 @@ log() {
 main() {
 
 export DEBIAN_FRONTEND=noninteractive
-USER_NAME="snaker"
+USER_NAME="snake"
 
 ROOT_DEV=$(mount | grep "on / type btrfs" | grep "subvol=/@" | awk '{print $1}')
 if [ -z "$ROOT_DEV" ]; then

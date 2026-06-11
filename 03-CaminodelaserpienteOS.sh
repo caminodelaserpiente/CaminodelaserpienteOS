@@ -68,12 +68,14 @@ apt install -y --no-install-recommends --no-install-suggests \
  gnome-shell \
  gnome-control-center \
  gnome-console \
-  gnome-builder \
+ gnome-builder \
  ffmpegthumbnailer \
  libgdk-pixbuf2.0-bin \
  gdm3 \
  loupe \
- vlc 
+ vlc \
+ pavucontrol \
+ evince \
  fonts-noto \
  fonts-liberation2 \
  fonts-noto-color-emoji \

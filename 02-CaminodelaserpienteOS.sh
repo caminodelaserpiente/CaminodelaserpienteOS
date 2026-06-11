@@ -25,8 +25,8 @@ main() {
     export LC_ALL=C
 
     SECONDS=0
-    HOSTNAME="Jarvis"
-    USER_NAME="snaker"
+    HOSTNAME="Ouroboros"
+    USER_NAME="snake"
     USER_PASS="222"
     ROOT_PASS="222"
 

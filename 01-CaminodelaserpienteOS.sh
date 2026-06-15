@@ -29,8 +29,8 @@ main() {
     LV_HOME_NAME="CaminodelaserpienteOS_GNU_Linux_Debian_Trixie_lvm_home" # _7${SUFFIX1}${SUFFIX2}"     #Nombre del Logical Volume para /home
 
     cat <<EOF > /etc/apt/sources.list
-    deb https://lidsol.fi-b.unam.mx/debian/ trixie main contrib non-free non-free-firmware
-    deb-src https://lidsol.fi-b.unam.mx/debian/ trixie main contrib non-free non-free-firmware
+deb https://deb.debian.org/debian/ trixie main contrib non-free non-free-firmware
+deb-src https://deb.debian.org/debian/ trixie main contrib non-free non-free-firmware
 EOF
 
     log "Instalando herramientas necesarias en el entorno Live ..."

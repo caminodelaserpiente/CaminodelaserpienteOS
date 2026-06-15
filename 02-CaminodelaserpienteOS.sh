@@ -32,14 +32,14 @@ main() {
 
     log "[CHroot] Configurando repositorios sources.list para apt ..."
     cat <<EOF > /etc/apt/sources.list
-    deb https://lidsol.fi-b.unam.mx/debian/ trixie main contrib non-free non-free-firmware
-    deb-src https://lidsol.fi-b.unam.mx/debian/ trixie main contrib non-free non-free-firmware
+deb http://deb.debian.org/debian/ trixie main contrib non-free non-free-firmware
+deb-src http://deb.debian.org/debian/ trixie main contrib non-free non-free-firmware
 
-    deb https://security.debian.org/debian-security trixie-security main contrib non-free non-free-firmware
-    deb-src https://security.debian.org/debian-security trixie-security main contrib non-free non-free-firmware
+deb https://security.debian.org/debian-security trixie-security main contrib non-free non-free-firmware
+deb-src https://security.debian.org/debian-security trixie-security main contrib non-free non-free-firmware
 
-    deb https://lidsol.fi-b.unam.mx/debian/ trixie-updates main contrib non-free non-free-firmware
-    deb-src https://lidsol.fi-b.unam.mx/debian/ trixie-updates main contrib non-free non-free-firmware
+deb http://deb.debian.org/debian/ trixie-updates main contrib non-free non-free-firmware
+deb-src http://deb.debian.org/debian/ trixie-updates main contrib non-free non-free-firmware
 EOF
 
     log "[CHroot] Configurando teclado ..."

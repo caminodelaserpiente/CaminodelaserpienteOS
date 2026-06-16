@@ -1,5 +1,5 @@
 #!/bin/sh
-# CaminodelaserpienteOS/, is a GNU/Linux distributed OS | Debian Trixie implementation powered by LIDSOL mirrors. 
+# CaminodelaserpienteOS/, is a GNU/Linux distributed OS | Debian Trixie implementation. 
 # \section{Build}
 
 set -eu

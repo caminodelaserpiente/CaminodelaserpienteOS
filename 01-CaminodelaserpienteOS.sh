@@ -98,7 +98,7 @@ EOF
     mount "$P1" /mnt/boot/efi
 
     log "Instalando sistema base Debian Trixie ..."
-    debootstrap --arch amd64 --variant=minbase trixie /mnt https://lidsol.fi-b.unam.mx/debian/
+    debootstrap --arch amd64 --variant=minbase trixie /mnt http://deb.debian.org/debian/
 
     log "Generando fstab y crypttab ..."
     genfstab -U /mnt | tee /mnt/etc/fstab

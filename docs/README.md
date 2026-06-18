@@ -1,5 +1,5 @@
 <!-- # CaminodelaserpienteOS/, is a GNU/Linux distributed OS | Debian Trixie implementation. 
-# \section{Manuductio celere} -->
+# \section{Manuductio celeris} -->
 
 # CaminodelaserpienteOS
 

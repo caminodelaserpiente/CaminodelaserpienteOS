@@ -39,8 +39,8 @@ sync
 umount /mnt
 
 log "Instalando herramientas ..."
-apt install htop git -y --no-install-recommends --no-install-suggests
-# apt install bluez ovmf qemu-system-x86 qemu-utils qemu-system-gui -y --no-install-recommends --no-install-suggests
+apt install htop -y --no-install-recommends --no-install-suggests
+# apt install git bluez ovmf qemu-system-x86 qemu-utils qemu-system-gui -y --no-install-recommends --no-install-suggests
 # sudo usermod -aG kvm $USER_NAME
 # mkdir -p /home/$USER_NAME/.qemu
 # mkdir -p /home/$USER_NAME/.qemu/imgs
@@ -74,7 +74,6 @@ apt install -y --no-install-recommends --no-install-suggests \
  gdm3 \
  loupe \
  vlc \
- pavucontrol \
  evince \
  fonts-noto \
  fonts-liberation2 \
@@ -83,6 +82,7 @@ apt install -y --no-install-recommends --no-install-suggests \
  fonts-freefont-ttf \
  fonts-noto-cjk \
  fonts-noto-core \
+ # pavucontrol \
  # libreoffice-writer \
  # libreoffice-impress \
  # libreoffice-calc
@@ -100,9 +100,9 @@ apt install wget curl -y --no-install-recommends --no-install-suggests
 apt install --reinstall ca-certificates -y
 mkdir -p /home/$USER_NAME/software
 cd /home/$USER_NAME/software
-# wget -O vscode_latest.deb 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64'
+wget -O vscode_latest.deb 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64'
 # wget -c https://dbeaver.io/files/dbeaver-ce-latest-linux-x86_64.deb -O dbeaver-ce-latest-linux-x86_64.deb
-wget https://repo.librewolf.net/pool/librewolf-149.0.2-2-linux-x86_64-deb.deb
+# wget https://repo.librewolf.net/pool/librewolf-149.0.2-2-linux-x86_64-deb.deb
 # URL=$(curl -sI https://github.com/beekeeper-studio/beekeeper-studio/releases/latest | grep -i location | cut -d ' ' -f 2 | tr -d '\r')
 # VERSION=$(basename $URL)
 # DEB_URL="https://github.com/beekeeper-studio/beekeeper-studio/releases/download/${VERSION}/beekeeper-studio_${VERSION#v}_amd64.deb"

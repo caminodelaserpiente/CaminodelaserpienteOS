@@ -164,6 +164,8 @@ EOF
 
     log "[CHroot] Habilitando servicios..."
     systemctl enable ssh
+    mv /tmp/CaminodelaserpienteOS "/home/$USER_NAME/CaminodelaserpienteOS"
+    chown -R "$USER_NAME:$USER_NAME" "/home/$USER_NAME/CaminodelaserpienteOS"
 
     log "[CHroot] Exit ..."
     exit

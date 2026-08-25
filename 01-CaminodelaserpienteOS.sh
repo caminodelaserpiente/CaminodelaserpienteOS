@@ -84,7 +84,7 @@ EOF
     log "Configurando subvolumen Btrfs ..."
     umount -R /mnt 2>/dev/null || true
     UUID_BTRFS=$(blkid -s UUID -o value /dev/"$VG_NAME"/"$LV_ROOT_NAME")
-    mount -t btrfs -o uuid="$UUID_BTRFS" /mnt || mount /dev/"$VG_NAME"/"$LV_ROOT_NAME" /mnt
+    mount /dev/"$VG_NAME"/"$LV_ROOT_NAME" /mnt
     sleep 1
     btrfs subvolume create /mnt/@ 2>/dev/null || true
     umount /mnt

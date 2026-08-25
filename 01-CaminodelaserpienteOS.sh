@@ -114,14 +114,14 @@ EOF
     fi
     cp 02-CaminodelaserpienteOS.sh /mnt/tmp/02-CaminodelaserpienteOS.sh
     chmod +x /mnt/tmp/02-CaminodelaserpienteOS.sh
-    echo "Entrando a Chroot para finalizar configuración ..."
-    chroot /mnt /usr/bin/env bash /tmp/02-CaminodelaserpienteOS.sh
 
     log "Copiando herramientas a la home del usuario ..."
     SCRIPT_PATH=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
-    mkdir -p "/mnt/home/$USER_NAME/CAMINODELASERPIENTE"
-    cp -r "$SCRIPT_PATH/." "/mnt/home/$USER_NAME/CAMINODELASERPIENTE/"
-    chroot /mnt chown -R "$USER_NAME:$USER_NAME" "/home/$USER_NAME/CAMINODELASERPIENTE"
+    mkdir -p "/mnt/tmp/CaminodelaserpienteOS"
+    cp -r "$SCRIPT_PATH/." "/mnt/tmp/CaminodelaserpienteOS/"
+    
+    echo "Entrando a Chroot para finalizar configuración ..."
+    chroot /mnt /usr/bin/env bash /tmp/02-CaminodelaserpienteOS.sh
 
     log "Limpieza post-CHROOT ..."
     umount -l /mnt/dev/pts /mnt/dev /mnt/proc /mnt/sys /mnt/run 2>/dev/null || true

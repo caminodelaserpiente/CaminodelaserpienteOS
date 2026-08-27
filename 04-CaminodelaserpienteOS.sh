@@ -30,7 +30,7 @@ fi
 log "Dispositivo detectado correctamente: $ROOT_DEV"
 
 log "Instalando software ..."
-apt install -y --no-install-recommends --no-install-suggests /home/$USER_NAME/software/librewolf-*.deb
+apt install -y --no-install-recommends --no-install-suggests /home/$USER_NAME/software/vscode_latest.deb
 
 log "Crear punto de restauración n.3 ..."
 mount "$ROOT_DEV" /mnt
